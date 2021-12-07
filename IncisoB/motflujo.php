@@ -99,7 +99,7 @@
 		echo '<br>';
 		echo $sql;
 		mysqli_query($conn, $sql);
-		header("Location: desflujo.php?flujo=".$flujo."&proceso=".$procesosiguiente);
+		header("Location: desflujo.php?flujo=".$flujo."&proceso=".$procesosiguiente."&notramite=$notramite");
 	}else{
 		include("rechazar.php");
 		header("Location: bandeja.php");
